@@ -1,5 +1,5 @@
-function solution01() {
-  var name = document.getElementById("name-input").value;
+function greeting() {
+  var name = document.getElementById("input").value;
 
   var message = function(name) {
     switch (name) {
@@ -13,5 +13,5 @@ function solution01() {
     }
   };
 
-  document.getElementById("name-display").innerHTML = name ? message(name) : '';
+  document.getElementById("output").innerHTML = name ? message(name) : '';
 }
