@@ -1,0 +1,24 @@
+{
+  "quotes": [
+    {
+      "person": "Rhett Butler",
+      "phrase": "Frankly, my dear, I don't give a damn."
+    },
+    {
+      "person": "Don Vito Corleone",
+      "phrase": "I'm gonna make him an offer he can't refuse."
+    },
+    {
+      "person": "Terry Malloy",
+      "phrase": "You don't understand! I coulda had class. I coulda been a contender. I could've been somebody, instead of a bum, which is what I am."
+    },
+    {
+      "person": "Dorothy",
+      "phrase": "Toto, I've a feeling we're not in Kansas anymore."
+    },
+    {
+      "person": "Rick Blaine",
+      "phrase": "Here's looking at you, kid."
+    }
+  ]
+}
