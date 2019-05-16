@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Exercises for Programmers</title>
+    <title>04 - Mad Lib</title>
 
     <!-- Bootstrap -->
     <!-- Latest compiled and minified CSS -->
@@ -15,30 +15,42 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
           integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 </head>
+
 <body>
 <div class="row">
-    <div class="col-sm-6 col-sm-offset-3 text-center">
-        <h1>Exercises for Programmers</h1>
-        <h4>ECMAScript 5 solutions by <a href="https://github.com/ItsASine">ItsASine</a></h4>
-        <div class="center-block">
-            <ul class="list-unstyled text-left">
-                <li>
-                    <a href="01/01.html">01 - Saying Hello</a>
-                </li>
-                <li>
-                    <a href="02/02.html">02 - Counting the Number of Characters</a>
-                </li>
-                <li>
-                    <a href="03/03.html">03 - Printing Quotes</a>
-                </li>
-                <li>
-                    <a href="04/04.html">04 - Mad Lib</a>
-                </li>
+    <nav class="navbar navbar-inverse">
+        <div class="container">
+            <ul class="nav navbar-nav">
+                <li><a href="https://itsasine.github.io/exercises-for-programmers">Home</a></li>
             </ul>
         </div>
-    </div>
+    </nav>
 </div>
 
+<div class="row">
+    <div class="col-sm-12 text-center">
+        <h1>04 - Mad Lib</h1>
+
+        <div class="col-sm-6">
+            <label for="noun">Enter a noun:</label>
+            <input type="text" name="name" id="noun" onchange="populateMadLibs();"/>
+        </div>
+        <div class="col-sm-6">
+            <label for="verb">Enter a verb:</label>
+            <input type="text" name="name" id="verb" onchange="populateMadLibs();"/>
+        </div>
+        <div class="col-sm-6">
+            <label for="adjective">Enter an adjective:</label>
+            <input type="text" name="name" id="adjective" onchange="populateMadLibs();"/>
+        </div>
+        <div class="col-sm-6">
+            <label for="adverb">Enter an adverb:</label>
+            <input type="text" name="name" id="adverb" onchange="populateMadLibs();"/>
+        </div>
+        <hr/>
+        <p id="output"></p>
+    </div>
+</div>
 
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -48,6 +60,11 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
         integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
         crossorigin="anonymous"></script>
+
+<script src="04.js"></script>
+<script>
+  displayQuotes();
+</script>
 
 <footer class="navbar-fixed-bottom">
     <div class="row">
